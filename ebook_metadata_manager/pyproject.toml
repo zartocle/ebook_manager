@@ -1,0 +1,19 @@
+[project]
+name = "ebook_metadata_manager"
+version = "0.0.1"
+authors = [
+  { name="Alessandro Tocci", email="alessandro.tocci@gmail.com" },
+]
+description = "A simple script that iterates over the content of a directory, checks every file MIME type and if it's a known ebook format, will parse the metadata and rename the file with a determined name structure"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Ubuntu Linux",
+]
+license = "GPLv3"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/"
+Issues = "https://github.com"
