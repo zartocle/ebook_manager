@@ -53,3 +53,6 @@ ipython_config.py
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# WHITELIST
+!requirements.txt
