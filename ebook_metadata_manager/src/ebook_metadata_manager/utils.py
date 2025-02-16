@@ -1,4 +1,5 @@
 import subprocess
+import logging
 
 
 def select_folder() -> str:

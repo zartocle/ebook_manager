@@ -12,12 +12,10 @@ logging.basicConfig(
     level=logging.DEBUG,
 )
 
-if __name__ == "__main__":
+ebooks_path = utils.select_folder()
 
-    ebooks_path = utils.select_folder()
-    # print(ebooks_path)
-    if ebooks_path:
-        if utils.confirm_action(ebooks_path):
-            f_handler.bulk_rename_files(ebooks_path + "/")
-    else:
-        logging.info("No directory selected")
+if ebooks_path:
+    if utils.confirm_action(ebooks_path):
+        f_handler.bulk_rename_files(ebooks_path + "/")
+else:
+    logging.info("No directory selected")
