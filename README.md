@@ -20,7 +20,10 @@ It was developed using a virtual environment created with the `venv` package and
     Deactivate the virtual environment:
     `deactivate`
 
-* Install the following packages: `libdjvulibre-dev`, `pkg-config`
+* Install the following packages: 
+
+        * `libdjvulibre-dev`, `pkg-config` (for support to DJVU files)
+        * `libcairo2-dev` (for support to python bindings for GNOME)
 
 
 * Install the packages listed in `requirements.txt` with:
