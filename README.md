@@ -28,7 +28,8 @@ It was developed using a virtual environment created with the `venv` package and
 
 * Install the packages listed in `requirements.txt` with:
 
-    `pip install -r /path/to/requirements.txt`
+    `python -m pip install -r path/to/requirements.txt`   
+
 
 * How to automatically generate a `requirements.txt` file:
 
