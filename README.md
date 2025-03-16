@@ -10,31 +10,31 @@ It was developed using a virtual environment created with the `venv` package and
 
 #### How to prepare the environment to execute the program (currently works on Ubuntu Linux only):
 
-* (Recommended:) Create a virtual environment with the tool of your choice
+1. (Recommended:) Create a virtual environment with the tool of your choice
 
     `python3 -m venv <env_name>`
 
     Activate the virtual environment:
     `source <env_name>/bin/activate`
 
-    Deactivate the virtual environment:
-    `deactivate`
+    > To deactivate the virtual environment:    `deactivate`
 
-* Install the following packages: 
+2. Install the following packages: 
 
         * `libdjvulibre-dev`, `pkg-config` (for support to DJVU files)
         * `libcairo2-dev` (for support to python bindings for GNOME)
 
 
-* Install the packages listed in `requirements.txt` with:
+3. Install the packages listed in `requirements.txt` with:
 
     `python -m pip install -r path/to/requirements.txt`   
 
+    >
+    >How to automatically generate a `requirements.txt` file:
+    >
+    >    `pip install pipreqs
+    > pipreqs /path/to/project`
 
-* How to automatically generate a `requirements.txt` file:
-
-    `pip install pipreqs
-pipreqs /path/to/project`
 
 <br><br><br><br><br><br>
 
