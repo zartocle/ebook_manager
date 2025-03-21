@@ -10,9 +10,9 @@ This is a simple learning project: a Linux script, written in Python, that will:
 The script generates a decent logfile that can tell whether everything went according to plan, and which files where not processed if any.
 
 
-I am trying to package this as a python package, but don't guarantee compatibility with systems other than Linux
-
-
+#### Development notes
+Gnome:
+How to install development library for PyGObject: [see HERE](https://pygobject.gnome.org/getting_started.html#ubuntu-getting-started)
 
 
 # TO-DO:
