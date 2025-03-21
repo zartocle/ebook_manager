@@ -1,17 +1,22 @@
 import subprocess
 import logging
+import platform
 
 
 def select_folder() -> str:
     """This function will open a dialog that lets the user select a directory, and returns the dir path as a string"""
-    try:
-        result = subprocess.run(
-            ["kdialog", "--getexistingdirectory", "~"], capture_output=True, text=True
-        )
-        return result.stdout.strip()  # Rimuove spazi vuoti o newline
-    except Exception as e:
-        logging.exception(f"Error while trying to open the file dialog")
-        return {}
+    oper_system = platform.system()
+    if oper_system == "Linux":
+        try:
+            result = subprocess.run(
+                ["kdialog", "--getexistingdirectory", "~"],
+                capture_output=True,
+                text=True,
+            )
+            return result.stdout.strip()  # Rimuove spazi vuoti o newline
+        except Exception as e:
+            logging.exception(f"Error while trying to open the file dialog")
+            return {}
 
 
 def name_without_file_extension(file_name: str):
