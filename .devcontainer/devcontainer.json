@@ -1,0 +1,19 @@
+{
+"name": "Ale's Docker",
+"image": "mcr.microsoft.com/devcontainers/typescript-node",
+// 1) Create the devcontainer.env in case it doesn't exist.
+// > or else user will see a none-describing error in vscode when trying to start the dev-container.
+// 2) Use the vscode .vscode/settings.json.default file to set up the recommended settings.
+//"initializeCommand": "touch .devcontainer/dbt/devcontainer.env && cp .vscode/settings.json.default .vscode/settings.json",
+//"postCreateCommand": "pip install shandy-sqlfmt[jinjafmt]==0.26.0 && pre-commit install && .devcontainer/dbt/post_create_scripts/install_bk.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"
+					,"ms-python.vscode-pylance"
+					,"ms-python.black-formatter"
+					,"shd101wyy.markdown-preview-enhanced"
+					,"streetsidesoftware.code-spell-checker"]
+    }
+  },
+  "forwardPorts": [3000]
+}
