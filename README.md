@@ -1,7 +1,7 @@
 ### Ebook manager
 
 
-This is a little educational project I'm using to learn Python; a program that, once given a directory path, will scann all files contained in it and, for those that are ebooks, will parse file metadata and rename the file accordingly, based on the structure _<book_name> <author_name>
+This is a little educational project I'm using to learn Python; a program that, once given a directory path, will scan all files contained in it and, for those that are found to be ebooks, will parse file metadata and rename the file accordingly, based on the structure _<book_name>\_<author_name>_
 
 
 
