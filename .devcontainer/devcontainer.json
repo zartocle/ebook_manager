@@ -1,6 +1,6 @@
 {
 "name": "Ale's Docker",
-"image": "mcr.microsoft.com/devcontainers/typescript-node",
+"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
 // 1) Create the devcontainer.env in case it doesn't exist.
 // > or else user will see a none-describing error in vscode when trying to start the dev-container.
 // 2) Use the vscode .vscode/settings.json.default file to set up the recommended settings.
