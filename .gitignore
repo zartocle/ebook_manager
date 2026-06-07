@@ -1,6 +1,9 @@
 # Virtual environments
 *_venv
 
+# IDE-generated crap
+.idea/*
+
 # Data stores
 *.json 
 *.csv
@@ -56,3 +59,4 @@ Thumbs.db
 
 # WHITELIST
 !requirements.txt
+!devcontainer.json
